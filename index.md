@@ -10,7 +10,7 @@ Everyone communicates with other people. Most of the time, the conversations wil
 
 ## Dataset and Wikipedia Talk Page Discussions
 
-
+To do the analysis, we turn to use a 
 
 ## Linguistic Harbingers of Conversational Failure
 
