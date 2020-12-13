@@ -7,7 +7,7 @@ layout: home
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
         display: inline-block;
         color: #999;
-        padding: 2px;">copyright</div>
+        padding: 2px;"><a href="https://xkcd.com/1432/">Copyright (c) xkcd</a></div>
 </center>
 
 
