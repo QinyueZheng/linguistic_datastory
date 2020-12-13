@@ -4,10 +4,10 @@ layout: home
 <center>
     <img src="assets/banner.png" style="width:925px;height:373;">
     <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    <div style="color:orange;
         display: inline-block;
         color: #999;
-        padding: 2px;"><a href="https://xkcd.com/1432/">Copyright (c) xkcd</a></div>
+        padding: 2px;"><a href="https://xkcd.com/1432/">Copyright © xkcd</a></div>
 </center>
 
 
