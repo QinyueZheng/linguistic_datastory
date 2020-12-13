@@ -11,6 +11,14 @@ layout: home
 </center>
 
 
+<center>
+<p style="font-family: times, serif; font-size:11pt; font-style:italic">
+    By swallowing evil words unsaid, no one has ever harmed his stomach. -- Winston Churchill
+</p>
+</center>
+
+
+
 ## Introduction
 
 Everyone communicates with other people. Most of the time, the conversations will have happy endings. But sometimes, the conversations maybe go awry. This kind of conversations gone awry are more often on the internet. Detecting such kind of unfriendly conversations on the internet is quite critical. The question is, is there any linguistic cues that we can use to predict whether the conversation will go awry before it actually happens.
