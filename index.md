@@ -1,8 +1,15 @@
 ---
 layout: home
 ---
+<center>
+    <img src="assets/banner.png" style="width:925px;height:373;">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+        display: inline-block;
+        color: #999;
+        padding: 2px;">copyright</div>
+</center>
 
-<img src="assets/banner.png" style="width:925px;height:373;">
 
 ## Introduction
 
@@ -10,9 +17,10 @@ Everyone communicates with other people. Most of the time, the conversations wil
 
 ## Dataset and Wikipedia Talk Page Discussions
 
-To do the analysis, we turn to use a 
+To do the analysis, we turn to use a dataset of Wikipedia talk page discussion. The dataset contains 
 
 ## Linguistic Harbingers of Conversational Failure
+
 
 ### Sentiment
 
