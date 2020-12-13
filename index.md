@@ -12,7 +12,7 @@ layout: home
 
 
 <center>
-<p style="font-family: times, serif; font-size:11pt; font-style:italic">
+<p style="font-family: times, serif; font-size:5pt; font-style:italic">
     By swallowing evil words unsaid, no one has ever harmed his stomach. -- Winston Churchill
 </p>
 </center>
