@@ -2,7 +2,7 @@
 layout: home
 ---
 <center>
-    <img src="assets/banner.png" style="width:925px;height:373;">
+    <img src="assets/banner.png" style="width:850px;height:300;">
     <br>
     <div style="color:orange;
         display: inline-block;
