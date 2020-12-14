@@ -21,12 +21,13 @@ Everyone communicates with other people. Most of the time, the conversations wil
 
 Suppose you are a peace-loving linguist, and what you cannot tolerate are personal attacks, whether it is physical or verbal. One day, you are browsing the Wikipedia, and you find some entries should be modified or corrected. So you make some comments on the Wikipedia talk page. However, some other editors do not agree with your changes, and deny your suggestions. Hence you have a conversation with them:
 
+<br>
 <center>
-    <img src="assets/conversation.png" style="width:800px;height:600;">
+    <img src="assets/conversation.png" style="width:700px;height:600;">
 </center>
 
 
-Wow, this is so implite. This is personal attack!!
+Wow, this is so implite. This is **personal attack**!! 
 
 ## Introduction
 
