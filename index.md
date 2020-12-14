@@ -24,6 +24,11 @@ Suppose you are a peace-loving linguist, and what you cannot tolerate are person
 <br>
 <center>
     <img src="assets/conversation.png" style="width:700px;height:600;">
+    <br>
+    <div style="color:orange;
+        display: inline-block;
+        color: #999;
+        padding: 2px;">Your Conversation with the editors.</div>
 </center>
 
 
