@@ -21,18 +21,10 @@ Everyone communicates with other people. Most of the time, the conversations wil
 
 Suppose you are a peace-loving linguist, and what you cannot tolerate are personal attacks, whether it is physical or verbal. One day, you are browsing the Wikipedia, and you find some entries should be modified or corrected. So you make some comments on the Wikipedia talk page. However, some other editors do not agree with your changes, and deny your suggestions. Hence you have a conversation with them:
 
+<center>
+    <img src="assets/conversation.png" style="width:800px;height:600;">
+</center>
 
-You: I checked the newspaper website, and didn't see the roster because it was printed in the margin of a page. But it wouldn't be printed if untrue. 
-
-Editor A: Wikipedia can't just take your word. :::Again... Same response. 
-
-You : I told you that I read it. All you need to do is get a print copy of today's paper in this area, and you will see it. :::::My bad. Yesterday's paper 
-
-Editor A : Your word is not verifiable. Chances are you are most likely right.... but that doesn't matter. 
-
-Editor B : wiki_link doesn't require that sources be on-line. If he says he saw an off-line source we can accept the source in good faith. '' '' 
-
-Editor A : That's the dumbest thing I've ever heard - that's just an opening for anyone to claim anything. But whatever.... it says print-only is allowed... so fine... 
 
 Wow, this is so implite. This is personal attack!!
 
