@@ -28,20 +28,20 @@ Suppose you are a peace-loving linguist, and what you cannot tolerate are person
     <div style="color:orange;
         display: inline-block;
         color: #999;
-        padding: 2px;">Your Conversation with the editors.</div>
+        padding: 2px;">Your conversation with the editors.</div>
 </center>
 
-
+<br>
 Wow, this is so implite. This is **personal attack**!! As a linguist, you come up with a brilliant idea: can we detect such kind of unfriendly conversations on the internet automatically? Further more, is there any linguistic cues that we can use to predict whether the conversation will go awry before it actually happens?
 
 Let's try to utilize a linguistic dataset to analyze this hypothesis. Here we are going to use the **Conversations Gone Awry Dataset**, which is a collection of conversations among Wikipedia editors from Wikipedia talk pages. In the dataset, some of the conversations will derail into personal attacks.
 
 ## Dataset Observation
-Let's have a closer look at this dataset.
+Let's have a closer look at this dataset. 
 
+Some statistics about the dataset?
 
 ## Linguistic Harbingers of Conversational Failure?
-
 
 ### Sentiment
 
