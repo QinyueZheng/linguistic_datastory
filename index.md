@@ -76,4 +76,4 @@ We want to study the predictive power of some linguistic cues on conversation fa
 
 {% include imbalance_talktiveness.html %}
 
-{% include imbalance_talktiveness.html %}
+{% include imbalance_talktiveness_2.html %}
