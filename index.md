@@ -66,4 +66,14 @@ We want to study the predictive power of some linguistic cues on conversation fa
 
 
 
-{% include plotly_test.html %}
+{% include imbalance_politeness.html %}
+
+{% include imbalance_politeness_2.html %}
+
+{% include imbalance_sentiment.html %}
+
+{% include imbalance_sentiment_2.html %}
+
+{% include imbalance_talktiveness.html %}
+
+{% include imbalance_talktiveness.html %}
