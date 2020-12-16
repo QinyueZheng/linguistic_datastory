@@ -43,7 +43,7 @@ Let's have a closer look at this dataset. This dataset contains 2010 **speakers*
 *conversation_has_personal_attack*, which indicates whether any comment in this conversation contains a personal attack according to crowdsourced annotators.
 - Each **conversational turn** on the talk page is viewed as an *utterance*. For each utterance, there is also some metadata, and the most important is:
 *comment_has_personal_attack*, which indicates whether this comment was judged by 3 crowdsourced annotators to contain a personal attack.
-- For each **utterance**, there are some attributes:\
+- For each **utterance**, there are some attributes:
     + id: index of the utterance
     + speaker: the speaker who author the utterance
     + conversation_id: id of the first utterance in the conversation this utterance belongs to
@@ -52,6 +52,7 @@ Let's have a closer look at this dataset. This dataset contains 2010 **speakers*
     + text: textual content of the utterance
 
 ## Linguistic Harbingers of Conversational Failure?
+We want to study the predictive power of some linguistic cues on conversation failure detection. So, what kind of linguistic cues hidden in the sentences or utterances can be used? Well, we think **sentiment**, **politeness** and **talktiveness** might be able to do that. Intuitively, 
 
 ### Sentiment
 
@@ -62,3 +63,7 @@ Let's have a closer look at this dataset. This dataset contains 2010 **speakers*
 ## Predictive Power
 
 ## Conclusion
+
+
+
+{% include plotly_test.html %}
