@@ -51,6 +51,34 @@ Let's have a closer look at this dataset. This dataset contains 2010 **speakers*
     + timestamp: time of the utterance
     + text: textual content of the utterance
 
+
+## What Did They Say?
+So, what exactly did they said on the Wikipedia talk page? Why some utterances are considered to have personal attacks and the others are not. Let's have a look.
+
+
+<br>
+<center>
+    <img src="assets/wordcloud_attack.png" style="width:800px;height:600;">
+    <br>
+    <div style="color:orange;
+        display: inline-block;
+        color: #999;
+        padding: 2px;">Wordcloud for utterances with personal attack.</div>
+</center>
+<br>
+
+<br>
+<center>
+    <img src="assets/wordcloud_nonattack.png" style="width:800px;height:600;">
+    <br>
+    <div style="color:orange;
+        display: inline-block;
+        color: #999;
+        padding: 2px;">Wordcloud for utterances without personal attack.</div>
+</center>
+<br>
+
+
 ## Linguistic Harbingers of Conversational Failure?
 We want to study the predictive power of some linguistic cues on conversation failure detection. So, what kind of linguistic cues hidden in the sentences or utterances can be used? Well, we think **sentiment**, **politeness** and **talktiveness** might be able to do that. Intuitively, 
 
