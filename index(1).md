@@ -23,7 +23,7 @@ Suppose you are a peace-loving linguist, and what you cannot tolerate are person
 
 <br>
 <center>
-    <img src="assets/conversation.gif" style="width:700px;height:600;">
+    <img src="assets/conversation.png" style="width:700px;height:600;">
     <br>
     <div style="color:orange;
         display: inline-block;
@@ -51,43 +51,22 @@ Let's have a closer look at this dataset. This dataset contains 2010 **speakers*
     + timestamp: time of the utterance
     + text: textual content of the utterance
 -  the number of **utterance** distribution per conversation:
-To get the information about the distribution of the number of utterances per conversation, we calculate the utterance number for attacked conversation and unattacked conversation and plot the comparison figure. From the figure, we can know that most conversations have 3 to 8 utterances, and the number of gone awry conversations is basically the same as the number of peaceful conversations. Also, the distribution of the attacked conversations and unattacked conversations is almost the same. So our analysis based on this dataset is reliable to explore linguistic harbingers of conversational failure.
-
-{% include conv_utt_types_dist.html.html %}
-
-
-## What Did They Say?
-So, what exactly did they said on the Wikipedia talk page? Why some utterances are considered to have personal attacks and the others are not. Let's have a look. We divide all the utterances into two groups according to the labels whether or not it contains personal attack. After removing the same stop words, the word clouds for these two groups are shown below.
-
-<center>
-    <img src="assets/wordcloud_attack.png" style="width:500px;height:300;">
-    <br>
-    <div style="color:orange;
-        display: inline-block;
-        color: #999;
-        padding: 2px;">Wordcloud for utterances with personal attack.</div>
-</center>
-
-<center>
-    <img src="assets/wordcloud_nonattack.png" style="width:500px;height:300;">
-    <br>
-    <div style="color:orange;
-        display: inline-block;
-        color: #999;
-        padding: 2px;">Wordcloud for utterances without personal attack.</div>
-</center>
-
-Oops! Some workds in the wordcloud for the first group seems really rude and toxic. No wonder they are considered to have personal attacks.
-
+To get the information about the distribution of the number of utterances per conversation, we calculate the utterance number for attacked conversation and unattacked conversation and plot the comparison figure. From the figure, we can know that most conversations have 3 to 8 utterance, and the number of went awry conversation is basically the same as the number of peaceful conversations. Also, the distribution of the attacked conversations and unattacked conversations is almost the same. So our analysis based on this dataset is reliable to explore linguistic harbingers of conversational failure.
 
 ## Linguistic Harbingers of Conversational Failure?
-We want to study the predictive power of some linguistic cues on conversation failure detection. So, what kind of linguistic cues hidden in the sentences or utterances can be used? Well, we think **sentiment**, **politeness** and **talktiveness** might be able to do that. Intuitively, 
+We aim to detect warning signs indicating that a conversation is at risk of derailing into undesirable behaviors. We expect these signs to be subtle, since only consider messages exchanged when the two individuals are being ostensibly friendly. So, what kind of linguistic cues hidden in the sentences or utterances can be used? Well, we think **sentiment**, **politeness** and **talktiveness** features can reflect emotional responses, and we explore the role of such linguistic features in foretelling a particularly perplexing type of conversation failure.
+
 
 ### Sentiment
 
+
 ### Politeness
 
+
 ### Talktiveness
+
+
+
 
 ## Predictive Power
 To test whether these linguistic cues have any predictive power and to explore how they interact, we turn to a binary classification setting in which we try to detect whether the conversation will eventually turn awry. and devolve into a personal attack. We use logistic regression after univariate feature selection. The best setting for the model parameters is selected via 5-fold cross-validation, ensuring that instances from the same game and never found in both train and validation folds. 
@@ -107,17 +86,3 @@ Finally, we integrated all the selected features to test their predictive power.
 To sum up, **sentiment**, **politeness** and **talktiveness** features all capture a consistent signal that characterizes people's language when the conversations are about to go awry. 
 
 ## Conclusion
-
-
-
-{% include imbalance_politeness.html %}
-
-{% include imbalance_politeness_2.html %}
-
-{% include imbalance_sentiment.html %}
-
-{% include imbalance_sentiment_2.html %}
-
-{% include imbalance_talktiveness.html %}
-
-{% include imbalance_talktiveness_2.html %}
