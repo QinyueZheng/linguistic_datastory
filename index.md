@@ -55,24 +55,25 @@ Let's have a closer look at this dataset. This dataset contains 2010 **speakers*
 ## What Did They Say?
 So, what exactly did they said on the Wikipedia talk page? Why some utterances are considered to have personal attacks and the others are not. Let's have a look.
 
+
 <center>
-<div class="row">
-  <div class="column">
-    <img src="assets/wordcloud_attack.png" style="width:400px;height:300;">
+    <img src="assets/wordcloud_attack.png" style="width:500px;height:300;">
+    <br>
     <div style="color:orange;
         display: inline-block;
         color: #999;
         padding: 2px;">Wordcloud for utterances with personal attack.</div>
-  </div>
-  <div class="column">
-    <img src="assets/wordcloud_nonattack.png" style="width:400px;height:300;">
+</center>
+
+<center>
+    <img src="assets/wordcloud_nonattack.png" style="width:500px;height:300;">
+    <br>
     <div style="color:orange;
         display: inline-block;
         color: #999;
         padding: 2px;">Wordcloud for utterances without personal attack.</div>
-  </div>
-</div>
 </center>
+
 
 
 ## Linguistic Harbingers of Conversational Failure?
