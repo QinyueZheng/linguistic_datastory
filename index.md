@@ -23,7 +23,7 @@ Suppose you are a peace-loving linguist, and what you cannot tolerate are person
 
 <br>
 <center>
-    <img src="assets/conversation.png" style="width:700px;height:600;">
+    <img src="assets/conversation.gif" style="width:700px;height:600;">
     <br>
     <div style="color:orange;
         display: inline-block;
@@ -53,8 +53,7 @@ Let's have a closer look at this dataset. This dataset contains 2010 **speakers*
 
 
 ## What Did They Say?
-So, what exactly did they said on the Wikipedia talk page? Why some utterances are considered to have personal attacks and the others are not. Let's have a look.
-
+So, what exactly did they said on the Wikipedia talk page? Why some utterances are considered to have personal attacks and the others are not. Let's have a look. We divide all the utterances into two groups according to the labels whether or not it contains personal attack. After removing the same stop words, the word clouds for these two groups are shown below.
 
 <center>
     <img src="assets/wordcloud_attack.png" style="width:500px;height:300;">
@@ -74,6 +73,7 @@ So, what exactly did they said on the Wikipedia talk page? Why some utterances a
         padding: 2px;">Wordcloud for utterances without personal attack.</div>
 </center>
 
+Oops! Some workds in the wordcloud for the first group seems really rude and toxic. No wonder they are considered to have personal attacks.
 
 
 ## Linguistic Harbingers of Conversational Failure?
