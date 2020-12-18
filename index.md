@@ -79,7 +79,7 @@ So, what exactly did they said on the Wikipedia talk page? Why some utterances a
         padding: 2px;">Wordcloud for utterances without personal attack.</div>
 </center>
 
-Oops! Some workds in the wordcloud for the first group seems really rude and toxic. No wonder they are considered to have personal attacks.
+Oops! Some words in the wordcloud for the first group seems really rude and toxic. No wonder they are considered to have personal attacks.
 
 
 ## Linguistic Harbingers of Conversational Failure?
