@@ -122,8 +122,19 @@ Finally, we integrated all the selected features to test their predictive power.
 To sum up, **sentiment**, **politeness** and **talktiveness** features all capture a consistent signal that characterizes people's language when the conversations are about to go awry. 
 
 ## Ha! I Knew It!
-So far so good. We can see that the linguistic cues
+So far so good. In this datastory, we study how the subtle linguistic imbalance signals relate to future conversational failure. We focus on the particularly perplexing scenario, in which one participant of a civil conversation later attack other people in verbal, and finally leading this conversation go awry. To this end, we extend the proposed computational framework in (<span style="color:blue">Niculae et al., 2015</span>) for analyzing how linguistic cues, like sentiment, politeness, and talktiveness in a conversation are tied to its future trajectory.
 
+Extensive analysis of the linguistic cues show that the subtle imbalance signals of these cues have the predictive power to predict the fate of an initial civil conversation. While the effects we find are subtle, they verify that it is possible to achieve such an objective via linguistic cues. There are also some limitations 
+
+
+<center>
+    <img src="assets/internet_argument.png" style="width:400px;height:600;">
+    <br>
+    <div style="color:orange;
+        display: inline-block;
+        color: #999;
+        padding: 2px;"> It's easier to be an asshole to words than to people. <a href="https://xkcd.com/438/">Copyright © xkcd</a></div>
+</center>
 
 
 ### References
