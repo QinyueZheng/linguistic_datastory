@@ -39,7 +39,7 @@ Let's try to utilize a linguistic dataset to analyze this hypothesis. Here we ar
 ## Dataset Observation
 Let's have a closer look at this dataset. This dataset contains 2010 **speakers**, 6363 **utterances** and 1168 **conversations**.
 
-
+{% include statistics.html %}
 
 
 - Each **conversation** includes some metadata, and the most important is:
