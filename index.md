@@ -88,16 +88,18 @@ In conversations, there are positive sentiment (e.g. “I will still be thrilled
 From the figure we find that an imbalance in the amount of positive sentiment expressed by the speakers is a subtle sign that the conversation will end in personal attack. When looking closer at who is the source of the imbalance, we find that it is the "victims" that use significantly less positive sentiment than the "perpetrators", who eventually say something toxic. This is surprising and somewhat counterintuitive.
 
 ### Politeness
-Differences in levels of politeness can echo betrayals in Diplomacy games (<span style="color:blue">Niculae et al., 2015</span>). Using the Stanford Politeness classifier, we measure the politeness of each utterance. It is unexpected to see that both attackers and victims show little politeness in the conversations. But it is reasonable since this is online, and basically no one knows you and you know no one. Anonymous sometimes can reveal the true human nature.
+Differences in levels of politeness can echo betrayals in Diplomacy games (<span style="color:blue">Niculae et al., 2015</span>). Using the Stanford Politeness classifier, we measure the politeness of each utterance. It is unexpected to see that both attackers and victims show very little politeness in the conversations. But it is reasonable since this is online, and basically no one knows you and you know no one. Anonymous sometimes can reveal the true human nature.
 
 {% include imbalance_politeness_combine.html %}
 
-Conversations gone awry show a slight imbalance between the level of politeness. Not surprisingly, the attacker who jeopardize the conversation is more impolite, which also reflects that Politeness is not an ideal subtle cues to foretell the track of conversations.
+We can also see that the both parties involved in an awry conversation show less politeness compared with the participants in an ontrack conversation. Besides, conversations gone awry show a slight imbalance between the level of politeness. Not surprisingly, the attacker who jeopardize the conversation is more impolite, which also reflects that Politeness is not an ideal subtle cues to foretell the track of conversations.
 
 ### Talktiveness
+Another conversational aspect is the amount of communication flowing between the conversation participants, in each direction. To quantify this, we simply use the number of words in each utterance. It seems that victims send a slightly more words than the attackers in a conversation. While there is a subtle imbalance, it seems not significantly different.
 
 {% include imbalance_talktiveness_combine.html %}
 
+Anyway, these results show that there are indeed some subtle linguistic imbalance signals that are indicative of the future fate of the conversations.
 
 ## How Do They Perform?
 The intuition is that ontrack conversations will pertain the balance of the above mentioned linguistic cues, while the conversations that will go awry will show some inbalances. Results from the above suggest that linguisitc cues can be subtle signs of the conversation broken in the future.
@@ -129,5 +131,5 @@ So far so good. We can see that the linguistic cues
 <span style="color:#999"> 2. John M. Gottman and Robert W. Levenson. 2000. The
 timing of divorce: Predicting when a couple will divorce over a 14-year period. Journal of Marriage and Family, 62(3):737–745. </span><br>
 <span style="color:#999"> 3. Lu Wang and Claire Cardie. 2014. A piece of my mind: A sentiment analysis approach for online dispute detection. In Proceedings of the Association for Computational Linguistics. </span><br>
-<span style="color:blue">Richard Socher, Alex Perelygin, Jean Y Wu, Jason
+<span style="color:#999"> 4. Richard Socher, Alex Perelygin, Jean Y Wu, Jason
 Chuang, Christopher D Manning, Andrew Y Ng, and Christopher Potts. 2013. Recursive deep models for semantic compositionality over a sentiment treebank. In Proceedings of Emperical Methods in Natural Language Processing.</span><br>
