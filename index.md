@@ -51,9 +51,7 @@ From the figure, we can know that most conversations have 3 to 8 utterances, and
 
 
 ## The Toxic VS. the Mild Messages
-Let’s dive into the ocean of the real-world exchanged messages. Separating the utterances into two groups by whether they contain personal attack or not, here we present the typical toxic and mild message clouds. Even with just one glance, one can easily tell how rude and offensive those attacks are.
-
-OK, we know the distribution of the utterances. But what's the content of these utterances? What exactly did they said on the Wikipedia talk page? Why some utterances are considered to have personal attacks and the others are not. Let's have a look. We divide all the utterances into two groups according to the labels whether or not it contains personal attack. After removing the same stop words, the word clouds for these two groups are shown below.
+Let’s dive into the ocean of the real-world exchanged messages. Separating the utterances into two groups by whether they contain personal attack or not, here we present the typical toxic and mild message wordclouds. Even with just one glance, one can easily tell how rude and offensive those attacks are.
 
 <center>
     <img src="assets/wordcloud_attack.png" style="width:500px;height:300;">
@@ -73,10 +71,9 @@ OK, we know the distribution of the utterances. But what's the content of these 
         padding: 2px;">Wordcloud for utterances without personal attack.</div>
 </center>
 
-Oops! Some words in the wordcloud for the first group seems really rude, offensive and toxic. No wonder they are considered to have personal attacks.
-Language hurts. Let's "build a machine" to prevent such kind of conversations on the Internet. Instead of identifying antisocial comments after the fact, we aim to detect warning signs indicating that a civil conversation is at risk of derailing into such undesirable behaviors.
+Oops! Language hurts. Let's "build a machine" to prevent such kind of conversations on the Internet. Instead of identifying antisocial comments after the fact, we aim to detect subtle warning signs indicating that a civil conversation is at risk of derailing into such undesirable behaviors.
 
-## Can We Perceive The Conversation Failure Ahead of Time?
+## Can We Perceive the Conversation Failure Ahead of Time?
 For the sake of argument, there are always conversations meant to fail. You just knew it when something is going wrong. The question is can we automatically detect the cues of online conversation failures ahead of time?
 It is revealed in a case study based on the Diplomacy online game (<span style="color:blue">Niculae et al., 2015</span>) that subtle signs of imminent betrayal are encoded in the conversational patterns of the dyad, even if the victim is not aware of the relationship’s fate. Particularly, the online-game case study shows that lasting friendships exhibit a form of balance that manifests itself through language, while sudden changes in the balance of certain conversational attributes — such as positive sentiment, politeness, impend betrayal. We truly want to delve into the juicy real-world dataset, to find out the predictive power of those harbingers of imbalance, to shout out loud: **Ha! I knew it!**
 
@@ -90,11 +87,11 @@ In conversations, there are positive sentiment (e.g. “I will still be thrilled
 From the figure we find that an imbalance in the amount of positive sentiment expressed by the speakers is a subtle sign that the conversation will end in personal attack. When looking closer at who is the source of the imbalance, we find that it is the "victims" that use significantly less positive sentiment than the "perpetrators", who eventually say something toxic. This is surprising and somewhat counterintuitive.
 
 ### Politeness
-Differences in levels of politeness can echo betrayals in Diplomacy games (<span style="color:blue">Niculae et al., 2015</span>). Using the Stanford Politeness classifier, we measure the politeness of each utterance. It is unexpected to see that both attackers and victims show very little politeness in the conversations. But it is reasonable since this is online, and basically no one knows you and you know no one. Anonymous sometimes can reveal the true human nature.
+Differences in levels of politeness can echo betrayals in Diplomacy games (<span style="color:blue">Niculae et al., 2015</span>). Using the Stanford Politeness classifier, we measure the politeness of each utterance. It is unexpected to see that editors online show very little politeness in the conversations. But it is reasonable since when surfing online, basically no one knows you and you know no one. Anonymous sometimes can reveal the true human nature.
 
 {% include imbalance_politeness_combine.html %}
 
-We can also see that the both parties involved in an awry conversation show less politeness compared with the participants in an ontrack conversation. Besides, conversations gone awry show a slight imbalance between the level of politeness. Not surprisingly, the attacker who jeopardize the conversation is more impolite, which also reflects that Politeness is not an ideal subtle cues to foretell the track of conversations.
+We can also see that the both parties involved in an awry conversation show less politeness compared with the participants in an ontrack conversation. Besides, conversations gone awry show a slight imbalance between the level of politeness. Not surprisingly, the attacker who jeopardize the conversation is more impolite, which also reflects that Politeness is not an ideal subtle cue to foretell the track of conversations.
 
 ### Talktiveness
 Another conversational aspect is the amount of communication flowing between the conversation participants, in each direction. To quantify this, we simply use the number of words in each utterance. It seems that victims send a slightly more words than the attackers in a conversation. While there is a subtle imbalance, it seems not significantly different.
@@ -104,13 +101,13 @@ Another conversational aspect is the amount of communication flowing between the
 Anyway, these results show that there are indeed some subtle linguistic imbalance signals that are indicative of the future fate of the conversations.
 
 ## How Do They Perform?
-The intuition is that ontrack conversations will pertain the balance of the above mentioned linguistic cues, while the conversations that will go awry will show some inbalances. Results from the above suggest that linguisitc cues can be subtle signs of the conversation broken in the future.
-So, let's verify whether these linguistic cues are useful.
+The intuition is that ontrack conversations will pertain the balance of the aforementioned linguistic cues, while the conversations that will go awry will show some imbalances. Results from the above suggest that linguistic cues can be subtle signs of the conversation broken in the future.
+So, let's verify whether these linguistic cues are useful for prediction.
 
-To test whether these linguistic cues have any predictive power and to explore how they interact, we turn to a binary classification setting in which we try to detect whether the conversation will eventually go awry and devolve into a personal attack. We use the same balanced dataset as before, which contains half and half conversations that are ontrack and gone awry.
+To test whether these linguistic cues have any predictive power and to explore how they interact, we turn to a binary classification setting in which we try to detect whether the conversation will eventually go awry and devolve into a personal attack. Since the attactive utterances will unquestionably show the failure of conversations, we keep only the first two utterances of each conversation (i.e. The first message and the reply of it.) to see whether the “fate” of conversations can be predicted from the very beginning. We use the same balanced dataset as before, which contains half and half conversations that are ontrack and gone awry.
 
 ### Sentiment
-Changes in the sentiment expressed in a conversation can reflect the status of the relationship. When we select the sentiment score of each utterance in conversations to predict whether the conversation will go awry, the resulting model achieves a cross-validation accuracy of 53% with 95% bootstrapped confidence.
+Firstly we use the sentiment score of the first and second utterances in conversations as input features to conduct logistic regression, the result achieves a cross-validation accuracy of 53% with 95% bootstrapped confidence.
 
 ### Politeness
 Linguistic politeness can show consideration for the feelings and desires of one’s interlocutors. To create and uphold interpersonal relationships, the politeness in conversations can be informative. We measure the politeness of each utterance using the Stanford Politeness classifier and use these scores to predict the conversation trends. The resulting model achieves a cross-validation accuracy of 52% with 95% bootstrapped confidence.
@@ -124,9 +121,9 @@ Finally, we integrated all the selected features to test their predictive power.
 To sum up, **sentiment**, **politeness** and **talktiveness** features all capture a consistent signal that characterizes people's language when the conversations are about to go awry. 
 
 ## Ha! I Knew It!
-So far so good. In this datastory, we study how the subtle linguistic imbalance signals relate to future conversational failure. We focus on the particularly perplexing scenario, in which one participant of a civil conversation later attack other people in verbal, and finally leading this conversation go awry. To this end, we extend the proposed computational framework in (<span style="color:blue">Niculae et al., 2015</span>) for analyzing how linguistic cues, like sentiment, politeness, and talktiveness in a conversation are tied to its future trajectory.
+So far so good. In this datastory, we study how the subtle linguistic imbalance signals relate to future conversational failure. We focus on the particularly perplexing scenario, in which one participant of a civil conversation later attack other people in verbal, and finally leading this conversation into the awry way. To this end, by delve into a new juicy real-world dataset, we extend the proposed computational framework in (<span style="color:blue">Niculae et al., 2015</span>) for analyzing how linguistic cues, like sentiment, politeness, and talktiveness in a conversation are tied to its future trajectory.
 
-Extensive analysis of the linguistic cues show that the subtle imbalance signals of these cues have the predictive power to predict the fate of an initial civil conversation. While the effects we find are subtle, they verify that it is possible to achieve such an objective via linguistic cues. There are also some limitations in our analysis. We only explore sentiment, politeness and talktiveness, which show only subtle predictive powers. It might be possible to utilize some other linguistic cues to achieve better prediction.
+Extensive analysis of the linguistic cues show that the subtle imbalance signals of these cues have the predictive power to predict the fate of an initial civil conversation. While the effects we find are subtle, they verify that it is possible to achieve such an objective via linguistic cues. There are also some limitations in our analysis. We only explore sentiment, politeness and talktiveness, which show only subtle predictive powers. It might be possible to utilize some other linguistic cues to achieve better prediction. Besides, the single concept “Politeness” actually consists of multiple politeness strategies. For example, asking direct questions, using 2<sup>nd</sup> person starts, initiate the dialogues with please etc. In our work, we only take the average score calculated under the Stanford paradigm as input for prediction. More specific politeness strategies can be adapted for further study.
 
 <br>
 <center>
