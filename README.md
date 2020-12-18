@@ -1,50 +1,35 @@
-# :construction: WIP :construction: Athena Jekyll Theme
+**1. Title:** Linguistic Harbingers of Conversational Failure: A Case Study on an Online Strategy Game
 
-A simple and elegant theme for Jekyll and GitHub Pages.
+**2. Abstract:** 
+The paper has constructed the methodology to analyze linguistic betrayal based on an online game. We here want to apply this framework to a real-world social interaction, the Wikipedia “talk page wars”, to further explore its general applicability. To do so, we will use the Conversations Gone Awry Dataset, which is a collection of conversations from Wikipedia talk pages that derail into personal attacks (4,188 conversations, 30,021 comments). In our project, we mainly focus on three linguistic cues, politeness, sentiment and talkativeness. After feature calculation, we want to see whether there exist linguistic imbalance signals in the Wikipedia talk pages that can indicate a forthcoming conversational failure. This will allow us to better understand the linguistic balance and stability in conversations. Furthermore, we will test the predicting power of the framework by conducting logistic regression to see how well the linguistic features can foretell the trajectory of conversations.
 
-<img width="1280" alt="screenshot" src="https://cloud.githubusercontent.com/assets/334891/18644225/7f124416-7e76-11e6-899e-4f722a572171.png">
+**3. Research Questions:**
+    1.Do there exist linguistic imbalance signals in the Wikipedia talk pages that can indicate a forthcoming conversational failure?
+    2.How well can the linguistic features be used to predict the trajectory of conversations?
 
-### Features:
-* Mobile-first design ensures this theme performs fastest on mobile while scaling elegantly to desktop-size screens.
-* Designed for blogs and sites heavy on written content, with bold typography styles, homepage summaries, and previous/next snippets.
-* Supports a wide range of HTML elements and markdown.
-* Flexible styles that can be reused for customization without adding additional CSS.
-* Dynamically generated navigation links. See docs for adding pages with specific post category for-loops.
+**4. Proposed dataset:**
+***Conversations Gone Awry Dataset***  from the paper -- *Conversations gone awry: Detecting early signs of conversational failure*. This dataset is a collection of conversations among Wikipedia editors from Wikipedia talk pages (4,188 conversations, 30,021 comments). In the dataset, some of the conversations will derail into personal attacks.
 
-## Installation
+Each **conversation** includes some metadata, and the most important is:
+- conversation_has_personal_attack: whether any comment in this comment’s conversation contains a personal attack according to crowdsourced annotators.
 
-Add this line to your Jekyll site's Gemfile:
+Each **conversational turn** on the talk page is viewed as an utterance. For each utterance, there is also some metadata, and the most important is:
+- comment_has_personal_attack: whether this comment was judged by 3 crowdsourced annotators to contain a personal attack
 
-```ruby
-gem "jekyll-athena"
-```
+For each **utterance**, there are some attributes:
+- id: index of the utterance
+- speaker: the speaker who author the utterance
+- conversation_id: id of the first utterance in the conversation this utterance belongs to
+- reply_to: index of the utterance to which this utterance replies to (None if the utterance is not a reply)
+- timestamp: time of the utterance
+- text: textual content of the utterance
 
-And add this line to your Jekyll site:
+**5. Method:**
+- Data collection<br>
+We will get access to the dataset via [Convokit](https://convokit.infosci.cornell.edu/). To do so, we will install **convokit** via `pip` and get familiar to this tool kit.
 
-```yaml
-theme: jekyll-athena
-```
+- Feature selection and computing<br>
+The linguistic cues that we are goint to use are `politeness`, `sentiment` and `talkativeness`. To compute `politeness`, we are going to use the Stanford Politeness classifer. To compute `sentiment`, we are going to use the Stanford Sentiment Analyzer. For `talkativeness`, we will simply use the number of utterances, the average number of sentences per utterance, and the average number of words per utterance.
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install jekyll-athena
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/broccolini/athena. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-You theme is setup just like a normal Jelyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, and `_sass` tracked with Git will be released.
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+- Data analysis<br>
+Like the framework used for `Linguistic Harbingers of Betrayal`, we would like to analyze whether there exist linguistic imbalances in the selected features that signals the incoming personal attack. Besides, we will use logistic regression to test whether these linguistic cues have any predictive power and explore how good they are for the prediction.
