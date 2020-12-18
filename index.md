@@ -72,7 +72,7 @@ OK, we know the distribution of the utterances. But what's the content of these 
 </center>
 
 Oops! Some words in the wordcloud for the first group seems really rude, offensive and toxic. No wonder they are considered to have personal attacks.
-Ideally, everyone should be civil on the Internet.
+Language hurts. Let's "build a machine" to prevent such kind of conversations on the Internet. Instead of identifying antisocial comments after the fact, we aim to detect warning signs indicating that a civil conversation is at risk of derailing into such undesirable behaviors.
 
 ## Can We Perceive The Conversation Failure Ahead of Time?
 For the sake of argument, there are always conversations meant to fail. You just knew it when something is going wrong. The question is can we automatically detect the cues of online conversation failures ahead of time?
@@ -81,15 +81,18 @@ It is revealed in a case study based on the Diplomacy online game (<span style="
 Intuitively, if the linguistic signs are salient, there's no need to predict, the conversation failure is easily noticed. Given this, we would hope for subtle cues. Here we mainly look into **sentiment**, **politeness** and **talkativeness**. 
 
 ### Sentiment
-In conversations, there are positive sentiment (e.g. “I will still be thrilled if …”), negative sentiment (e.g. “It’s not a great expression …”) or neural sentiment (e.g. flat questions). Changes in sentiment can reflect emotional responses, social affect, as well as the status of the relationship as a whole (Gottman and Levenson, 2000; Wang and Cardie, 2014). We quantify the proportion of exchanged sentences that transmit positive, neutral and negative sentiment using the Stanford Sentiment Analyzer (Socher et al., 2013).
-As shown in Figure xx, it is the 
+In conversations, there are positive sentiment (e.g. “I will still be thrilled if …”), negative sentiment (e.g. “It’s not a great expression …”) or neural sentiment (e.g. flat questions). Changes in sentiment can reflect emotional responses, social affect, as well as the status of the relationship as a whole (<span style="color:blue">Gottman and Levenson, 2000</span>; <span style="color:blue">Wang and Cardie, 2014</span>). We quantify the proportion of exchanged sentences that transmit positive, neutral and negative sentiment using the Stanford Sentiment Analyzer (<span style="color:blue">Socher et al., 2013</span>).
 
 {% include imbalance_sentiment_combine.html %}
 
+From the figure we find that an imbalance in the amount of positive sentiment expressed by the speakers is a subtle sign that the conversation will end in personal attack. When looking closer at who is the source of the imbalance, we find that it is the "victims" that use significantly less positive sentiment than the "perpetrators", who eventually say something toxic. This is surprising and somewhat counterintuitive.
+
 ### Politeness
-Differences in levels of politeness can echo betrayals in Diplomacy games \ref {linguistic betrayal here}. Using the Stanford Politeness classifier, we measure the politeness of each utterance. Conversations gone awry show a slight imbalance between the level of politeness (one-sample t-test on the imbalance, p = xx). Not surprisingly, the attacker who jeopardize the conversation is less polite, which also reflects that Politeness is not an ideal subtle cues to foretell the track of conversations.
+Differences in levels of politeness can echo betrayals in Diplomacy games (<span style="color:blue">Niculae et al., 2015</span>). Using the Stanford Politeness classifier, we measure the politeness of each utterance. It is unexpected to see that both attackers and victims show little politeness in the conversations. But it is reasonable since this is online, and basically no one knows you and you know no one. Anonymous sometimes can reveal the true human nature.
 
 {% include imbalance_politeness_combine.html %}
+
+Conversations gone awry show a slight imbalance between the level of politeness. Not surprisingly, the attacker who jeopardize the conversation is more impolite, which also reflects that Politeness is not an ideal subtle cues to foretell the track of conversations.
 
 ### Talktiveness
 
@@ -123,5 +126,8 @@ So far so good. We can see that the linguistic cues
 
 ### References
 <span style="color:#999"> 1. Vlad Niculae, Srijan Kumar, Jordan Boyd-Graber, and Cristian Danescu-Niculescu-Mizil. 2015. Linguistic harbingers of betrayal: A case study on an online strategy game. In Proceedings of ACL. </span><br>
-<span style="color:#999"> 2. Ref2 </span><br>
-<span style="color:#999"> 3. Ref3 </span><br>
+<span style="color:#999"> 2. John M. Gottman and Robert W. Levenson. 2000. The
+timing of divorce: Predicting when a couple will divorce over a 14-year period. Journal of Marriage and Family, 62(3):737–745. </span><br>
+<span style="color:#999"> 3. Lu Wang and Claire Cardie. 2014. A piece of my mind: A sentiment analysis approach for online dispute detection. In Proceedings of the Association for Computational Linguistics. </span><br>
+<span style="color:blue">Richard Socher, Alex Perelygin, Jean Y Wu, Jason
+Chuang, Christopher D Manning, Andrew Y Ng, and Christopher Potts. 2013. Recursive deep models for semantic compositionality over a sentiment treebank. In Proceedings of Emperical Methods in Natural Language Processing.</span><br>
