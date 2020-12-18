@@ -8,7 +8,3 @@
         "theme-{{ site.theme_color | default: "light" }}.scss"
         // "theme-{{ site.theme_fonts | default: "system" }}.scss"
 ;
-
-.markdown-body {
-  text-align: justify;
-}
