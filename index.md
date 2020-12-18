@@ -124,4 +124,5 @@ Finally, we integrated all the selected features to test their predictive power.
 
 To sum up, **sentiment**, **politeness** and **talktiveness** features all capture a consistent signal that characterizes people's language when the conversations are about to go awry. 
 
-## Conclusion
+## Ha! I Knew It!
+So far so good. We can see that the linguistic cues 
