@@ -43,16 +43,15 @@ Let's have a closer look at this dataset. This dataset contains 2010 **speakers*
 
 More specifically, each **conversation** includes some metadata, and the most important is: *conversation_has_personal_attack*, which indicates whether any comment in this conversation contains a personal attack according to crowdsourced annotators. Each **conversational turn** on the talk page is viewed as an *utterance*. For each utterance, there is also some metadata, and the most important is: *comment_has_personal_attack*, which indicates whether this comment was judged by 3 crowdsourced annotators to contain a personal attack.
 
-To get the information about the distribution of the number of utterances per conversation, we calculate the utterance number for attacked conversation and unattacked conversation and plot the comparison figure. 
+To get the information about the distribution of the number of utterances per conversation, we calculate the utterance number for attacked conversations and unattacked conversations and plot the comparison figure. 
 
 {% include conv_utt_types_dist.html %}
 
 From the figure, we can know that most conversations have 3 to 8 utterances, and the number of gone awry conversations is basically the same as the number of peaceful conversations. Also, the distribution of the attacked conversations and unattacked conversations is almost the same. So our analysis based on this dataset is reliable to explore linguistic harbingers of conversational failure.
 
 
-
 ## What Did They Say?
-So, what exactly did they said on the Wikipedia talk page? Why some utterances are considered to have personal attacks and the others are not. Let's have a look. We divide all the utterances into two groups according to the labels whether or not it contains personal attack. After removing the same stop words, the word clouds for these two groups are shown below.
+OK, we know the distribution of the utterances. But what's the content of these utterances? What exactly did they said on the Wikipedia talk page? Why some utterances are considered to have personal attacks and the others are not. Let's have a look. We divide all the utterances into two groups according to the labels whether or not it contains personal attack. After removing the same stop words, the word clouds for these two groups are shown below.
 
 <center>
     <img src="assets/wordcloud_attack.png" style="width:500px;height:300;">
@@ -118,4 +117,11 @@ Finally, we integrated all the selected features to test their predictive power.
 To sum up, **sentiment**, **politeness** and **talktiveness** features all capture a consistent signal that characterizes people's language when the conversations are about to go awry. 
 
 ## Ha! I Knew It!
-So far so good. We can see that the linguistic cues 
+So far so good. We can see that the linguistic cues
+
+
+
+### References
+<span style="color:#999"> 1. Ref1 </span>
+<span style="color:#999"> 2. Ref2 </span>
+<span style="color:#999"> 3. Ref3 </span>
