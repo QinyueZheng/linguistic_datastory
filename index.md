@@ -122,6 +122,6 @@ So far so good. We can see that the linguistic cues
 
 
 ### References
-<span style="color:#999"> 1. Ref1 </span><br>
+<span style="color:#999"> 1. Vlad Niculae, Srijan Kumar, Jordan Boyd-Graber, and Cristian Danescu-Niculescu-Mizil. 2015. Linguistic harbingers of betrayal: A case study on an online strategy game. In Proceedings of ACL. </span><br>
 <span style="color:#999"> 2. Ref2 </span><br>
 <span style="color:#999"> 3. Ref3 </span><br>
