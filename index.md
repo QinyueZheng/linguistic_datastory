@@ -39,6 +39,9 @@ Let's try to utilize a linguistic dataset to analyze this hypothesis. Here we ar
 ## Dataset Observation
 Let's have a closer look at this dataset. This dataset contains 2010 **speakers**, 6363 **utterances** and 1168 **conversations**.
 
+
+
+
 - Each **conversation** includes some metadata, and the most important is:
 *conversation_has_personal_attack*, which indicates whether any comment in this conversation contains a personal attack according to crowdsourced annotators.
 - Each **conversational turn** on the talk page is viewed as an *utterance*. For each utterance, there is also some metadata, and the most important is:
@@ -84,10 +87,13 @@ Oops! Some workds in the wordcloud for the first group seems really rude and tox
 We want to study the predictive power of some linguistic cues on conversation failure detection. So, what kind of linguistic cues hidden in the sentences or utterances can be used? Well, we think **sentiment**, **politeness** and **talktiveness** might be able to do that. Intuitively, 
 
 ### Sentiment
+{% include imbalance_politeness_combine.html %}
 
 ### Politeness
+{% include imbalance_sentiment_combine.html %}
 
 ### Talktiveness
+{% include imbalance_talktiveness_combine.html %}
 
 ## Predictive Power
 To test whether these linguistic cues have any predictive power and to explore how they interact, we turn to a binary classification setting in which we try to detect whether the conversation will eventually turn awry. and devolve into a personal attack. We use logistic regression after univariate feature selection. The best setting for the model parameters is selected via 5-fold cross-validation, ensuring that instances from the same game and never found in both train and validation folds. 
