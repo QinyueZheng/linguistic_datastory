@@ -41,21 +41,14 @@ Let's have a closer look at this dataset. This dataset contains 2010 **speakers*
 
 {% include statistics.html %}
 
+More specifically, each **conversation** includes some metadata, and the most important is: *conversation_has_personal_attack*, which indicates whether any comment in this conversation contains a personal attack according to crowdsourced annotators. Each **conversational turn** on the talk page is viewed as an *utterance*. For each utterance, there is also some metadata, and the most important is: *comment_has_personal_attack*, which indicates whether this comment was judged by 3 crowdsourced annotators to contain a personal attack.
 
-- Each **conversation** includes some metadata, and the most important is:
-*conversation_has_personal_attack*, which indicates whether any comment in this conversation contains a personal attack according to crowdsourced annotators.
-- Each **conversational turn** on the talk page is viewed as an *utterance*. For each utterance, there is also some metadata, and the most important is: *comment_has_personal_attack*, which indicates whether this comment was judged by 3 crowdsourced annotators to contain a personal attack.
-- For each **utterance**, there are some attributes:
-    + id: index of the utterance
-    + speaker: the speaker who author the utterance
-    + conversation_id: id of the first utterance in the conversation this utterance belongs to
-    + reply_to: index of the utterance to which this utterance replies to (None if the utterance is not a reply)
-    + timestamp: time of the utterance
-    + text: textual content of the utterance
--  the number of **utterance** distribution per conversation:
-To get the information about the distribution of the number of utterances per conversation, we calculate the utterance number for attacked conversation and unattacked conversation and plot the comparison figure. From the figure, we can know that most conversations have 3 to 8 utterances, and the number of gone awry conversations is basically the same as the number of peaceful conversations. Also, the distribution of the attacked conversations and unattacked conversations is almost the same. So our analysis based on this dataset is reliable to explore linguistic harbingers of conversational failure.
+To get the information about the distribution of the number of utterances per conversation, we calculate the utterance number for attacked conversation and unattacked conversation and plot the comparison figure. 
 
 {% include conv_utt_types_dist.html %}
+
+From the figure, we can know that most conversations have 3 to 8 utterances, and the number of gone awry conversations is basically the same as the number of peaceful conversations. Also, the distribution of the attacked conversations and unattacked conversations is almost the same. So our analysis based on this dataset is reliable to explore linguistic harbingers of conversational failure.
+
 
 
 ## What Did They Say?
