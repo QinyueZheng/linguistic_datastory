@@ -71,12 +71,12 @@ OK, we know the distribution of the utterances. But what's the content of these 
         padding: 2px;">Wordcloud for utterances without personal attack.</div>
 </center>
 
-Oops! Some words in the wordcloud for the first group seems really rude and toxic. No wonder they are considered to have personal attacks.
-
+Oops! Some words in the wordcloud for the first group seems really rude, offensive and toxic. No wonder they are considered to have personal attacks.
+Ideally, everyone should be civil on the Internet.
 
 ## Can We Perceive The Conversation Failure Ahead of Time?
 For the sake of argument, there are always conversations meant to fail. You just knew it when something is going wrong. The question is can we automatically detect the cues of online conversation failures ahead of time?
-It is revealed in a case study based on the Diplomacy online game ***\ref{reference here please:)}*** that subtle signs of imminent betrayal are encoded in the conversational patterns of the dyad, even if the victim is not aware of the relationship’s fate. Particularly, the online-game case study shows that lasting friendships exhibit a form of balance that manifests itself through language, while sudden changes in the balance of certain conversational attributes — such as positive sentiment, politeness, impend betrayal. We truly want to delve into the juicy real-world dataset, to find out the predictive power of those harbingers of imbalance, to shout out loud: **Ha! I knew it!**
+It is revealed in a case study based on the Diplomacy online game (<span style="color:blue">Niculae et al., 2015</span>) that subtle signs of imminent betrayal are encoded in the conversational patterns of the dyad, even if the victim is not aware of the relationship’s fate. Particularly, the online-game case study shows that lasting friendships exhibit a form of balance that manifests itself through language, while sudden changes in the balance of certain conversational attributes — such as positive sentiment, politeness, impend betrayal. We truly want to delve into the juicy real-world dataset, to find out the predictive power of those harbingers of imbalance, to shout out loud: **Ha! I knew it!**
 
 Intuitively, if the linguistic signs are salient, there's no need to predict, the conversation failure is easily noticed. Given this, we would hope for subtle cues. Here we mainly look into **sentiment**, **politeness** and **talkativeness**. 
 
