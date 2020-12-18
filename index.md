@@ -82,22 +82,22 @@ So, what exactly did they said on the Wikipedia talk page? Why some utterances a
 Oops! Some words in the wordcloud for the first group seems really rude and toxic. No wonder they are considered to have personal attacks.
 
 
-## Can we perceive the conversation failure ahead of time?
+## Can We Perceive The Conversation Failure Ahead of Time?
 For the sake of argument, there are always conversations meant to fail. You just knew it when something is going wrong. The question is can we automatically detect the cues of online conversation failures ahead of time?
-It is revealed in a case study based on the Diplomacy online game ***\ref{reference here please:)}*** that subtle signs of imminent betrayal are encoded in the conversational patterns of the dyad, even if the victim is not aware of the relationship’s fate. Particularly, the online-game case study shows that lasting friendships exhibit a form of balance that manifests itself through language, while sudden changes in the balance of certain conversational attributes—such as positive sentiment, politeness impend betrayal. We truly want to delve into the juicy real-world dataset, to find out the predictive power of those harbingers of imbalance, to shout out loud: Ha! I knew it! 
-Intuitively, if the linguistic signs are salient, there’s no need to predict, the conversation failure is easily noticed. Given this, we would hope for subtle cues. Here we mainly look into **sentiment**, **politeness** and **talkativeness**. 
+It is revealed in a case study based on the Diplomacy online game ***\ref{reference here please:)}*** that subtle signs of imminent betrayal are encoded in the conversational patterns of the dyad, even if the victim is not aware of the relationship’s fate. Particularly, the online-game case study shows that lasting friendships exhibit a form of balance that manifests itself through language, while sudden changes in the balance of certain conversational attributes — such as positive sentiment, politeness, impend betrayal. We truly want to delve into the juicy real-world dataset, to find out the predictive power of those harbingers of imbalance, to shout out loud: **Ha! I knew it!**
+
+Intuitively, if the linguistic signs are salient, there's no need to predict, the conversation failure is easily noticed. Given this, we would hope for subtle cues. Here we mainly look into **sentiment**, **politeness** and **talkativeness**. 
 
 ### Sentiment
-In conversations, there are positive sentiment (e.g. “I will still be thrilled if …”), negative sentiment (e.g. “It’s not a great expression…”) or neural sentiment (e.g. flat questions). Changes in sentiment can reflect emotional responses, social affect, as well as the status of the relationship as a whole (Gottman and Levenson, 2000; Wang and Cardie, 2014). We quantify the proportion of exchanged sentences that transmit positive, neutral and negative sentiment using the Stanford Sentiment Analyzer (Socher et al., 2013).
+In conversations, there are positive sentiment (e.g. “I will still be thrilled if …”), negative sentiment (e.g. “It’s not a great expression …”) or neural sentiment (e.g. flat questions). Changes in sentiment can reflect emotional responses, social affect, as well as the status of the relationship as a whole (Gottman and Levenson, 2000; Wang and Cardie, 2014). We quantify the proportion of exchanged sentences that transmit positive, neutral and negative sentiment using the Stanford Sentiment Analyzer (Socher et al., 2013).
 As shown in Figure xx, it is the 
 
-{% include imbalance_politeness_combine.html %}
-
+{% include imbalance_sentiment_combine.html %}
 
 ### Politeness
 Differences in levels of politeness can echo betrayals in Diplomacy games \ref {linguistic betrayal here}. Using the Stanford Politeness classifier, we measure the politeness of each utterance. Conversations gone awry show a slight imbalance between the level of politeness (one-sample t-test on the imbalance, p = xx). Not surprisingly, the attacker who jeopardize the conversation is less polite, which also reflects that Politeness is not an ideal subtle cues to foretell the track of conversations.
 
-{% include imbalance_sentiment_combine.html %}
+{% include imbalance_politeness_combine.html %}
 
 ### Talktiveness
 
