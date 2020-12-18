@@ -32,12 +32,12 @@ Suppose you are a peace-loving linguist, and what you cannot tolerate are person
 </center>
 
 <br>
-Wow, this is so implite. This is **personal attack**!! As a linguist, you come up with a brilliant idea: can we detect such kind of unfriendly conversations on the Internet automatically? Further more, is there any linguistic cues that we can use to predict whether the conversation will go awry before it actually happens?
+Wow, this is so impolite. This is **personal attack**!! As a linguist, you may wondering: can we detect such kind of unfriendly conversations on the Internet automatically? Further more, are there any linguistic cues that we can use to predict whether the conversation will go awry before it actually happens?
 
 Let's try to utilize a linguistic dataset to analyze this hypothesis. Here we are going to use the **Conversations Gone Awry Dataset**, which is a collection of conversations among Wikipedia editors from Wikipedia talk pages. In the dataset, some of the conversations will derail into personal attacks.
 
 ## What Does This Dataset Contain?
-Let's have a closer look at this dataset. This dataset contains 2010 **speakers**, 6363 **utterances** and 1168 **conversations**. Among them, 513 speakers said something personal attack, 584 utterances are considered to be personal attack, and half of the conversations (584) contain personal attacks.
+Let's have a closer look at this dataset. This dataset contains 2010 **speakers**, 6363 **utterances** and 1168 **conversations**. Among them, 513 speakers said something containing personal attack, 584 utterances are considered to be personal attack, and half of the conversations (584) contain personal attacks.
 
 {% include statistics.html %}
 
@@ -47,10 +47,12 @@ To get the information about the distribution of the number of utterances per co
 
 {% include conv_utt_types_dist.html %}
 
-From the figure, we can know that most conversations have 3 to 8 utterances, and the number of gone awry conversations is basically the same as the number of peaceful conversations. Also, the distribution of the attacked conversations and unattacked conversations is almost the same. So our analysis based on this dataset is reliable to explore linguistic harbingers of conversational failure.
+From the figure, we can know that most conversations have 3 to 8 utterances, and the number of awry conversations is basically the same as the number of peaceful conversations. Also, the distribution of the attacked conversations and unattacked conversations is almost the same. So our analysis based on this dataset is reliable to explore linguistic harbingers of conversational failure.
 
 
-## What Did They Say?
+## The Toxic VS. the Mild Messages
+Let’s dive into the ocean of the real-world exchanged messages. Separating the utterances into two groups by whether they contain personal attack or not, here we present the typical toxic and mild message clouds. Even with just one glance, one can easily tell how rude and offensive those attacks are.
+
 OK, we know the distribution of the utterances. But what's the content of these utterances? What exactly did they said on the Wikipedia talk page? Why some utterances are considered to have personal attacks and the others are not. Let's have a look. We divide all the utterances into two groups according to the labels whether or not it contains personal attack. After removing the same stop words, the word clouds for these two groups are shown below.
 
 <center>
