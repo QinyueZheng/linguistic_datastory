@@ -122,6 +122,6 @@ So far so good. We can see that the linguistic cues
 
 
 ### References
-<span style="color:#999"> 1. Ref1 </span>
-<span style="color:#999"> 2. Ref2 </span>
-<span style="color:#999"> 3. Ref3 </span>
+<span style="color:#999"> 1. Ref1 </span><br>
+<span style="color:#999"> 2. Ref2 </span><br>
+<span style="color:#999"> 3. Ref3 </span><br>
