@@ -113,17 +113,3 @@ Finally, we integrated all the selected features to test their predictive power.
 To sum up, **sentiment**, **politeness** and **talktiveness** features all capture a consistent signal that characterizes people's language when the conversations are about to go awry. 
 
 ## Conclusion
-
-
-
-{% include imbalance_politeness.html %}
-
-{% include imbalance_politeness_2.html %}
-
-{% include imbalance_sentiment.html %}
-
-{% include imbalance_sentiment_2.html %}
-
-{% include imbalance_talktiveness.html %}
-
-{% include imbalance_talktiveness_2.html %}
