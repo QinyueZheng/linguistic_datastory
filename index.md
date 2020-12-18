@@ -124,9 +124,9 @@ To sum up, **sentiment**, **politeness** and **talktiveness** features all captu
 ## Ha! I Knew It!
 So far so good. In this datastory, we study how the subtle linguistic imbalance signals relate to future conversational failure. We focus on the particularly perplexing scenario, in which one participant of a civil conversation later attack other people in verbal, and finally leading this conversation go awry. To this end, we extend the proposed computational framework in (<span style="color:blue">Niculae et al., 2015</span>) for analyzing how linguistic cues, like sentiment, politeness, and talktiveness in a conversation are tied to its future trajectory.
 
-Extensive analysis of the linguistic cues show that the subtle imbalance signals of these cues have the predictive power to predict the fate of an initial civil conversation. While the effects we find are subtle, they verify that it is possible to achieve such an objective via linguistic cues. There are also some limitations 
+Extensive analysis of the linguistic cues show that the subtle imbalance signals of these cues have the predictive power to predict the fate of an initial civil conversation. While the effects we find are subtle, they verify that it is possible to achieve such an objective via linguistic cues. There are also some limitations in our analysis. We only explore sentiment, politeness and talktiveness, which show only subtle predictive powers. It might be possible to utilize some other linguistic cues to achieve better prediction.
 
-
+<br>
 <center>
     <img src="assets/internet_argument.png" style="width:400px;height:600;">
     <br>
@@ -143,4 +143,4 @@ Extensive analysis of the linguistic cues show that the subtle imbalance signals
 timing of divorce: Predicting when a couple will divorce over a 14-year period. Journal of Marriage and Family, 62(3):737–745. </span><br>
 <span style="color:#999"> 3. Lu Wang and Claire Cardie. 2014. A piece of my mind: A sentiment analysis approach for online dispute detection. In Proceedings of the Association for Computational Linguistics. </span><br>
 <span style="color:#999"> 4. Richard Socher, Alex Perelygin, Jean Y Wu, Jason
-Chuang, Christopher D Manning, Andrew Y Ng, and Christopher Potts. 2013. Recursive deep models for semantic compositionality over a sentiment treebank. In Proceedings of Emperical Methods in Natural Language Processing.</span><br>
+Chuang, Christopher D Manning, Andrew Y Ng, and Christopher Potts. 2013. Recursive deep models for semantic compositionality over a sentiment treebank. In Proceedings of Emperical Methods in Natural Language Processing.</span>
